@@ -210,11 +210,6 @@ public class ZaulController implements Initializable {
     }
 
     public void setBackground(){
-        try {
-            ParticleFX.getChildren().remove(0, 2001);
-        } catch (Exception e){
-
-        }
         String imageName = "ZaulIcons_4.jpg";
         ImageView background = new ImageView(new Image(getClass().getResource("Zaul/"+imageName).toString()));
         ParticleFX.getChildren().add(background);
